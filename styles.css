@@ -66,10 +66,13 @@ h1, h2 {
     margin-bottom: 1rem;
     cursor: pointer;
     text-align: center;
+    background-position: center;
+    background-size: cover;
+    font-weight: 800;
 }
   
 .nav-button:hover {
-    color: forestgreen;
+    color: #1c1c1c;
 }
   
 .nav-button.active {
@@ -127,12 +130,27 @@ h1, h2 {
     );
 }
 
-@media screen and (max-width: 800px) {
+
+[data-target="#slide-1"] {
+    background-image: url(./images/Poster1-low.png);
+}
+
+[data-target="#slide-2"] {
+    background-image: url(./images/Poster2-low.png);
+}
+
+[data-target="#slide-3"] {
+    background-image: url(./images/Poster1-low.png);
+}
+
+[data-target="#slide-4"] {
+    background-image: url(./images/Poster2-low.png);
+}
+
+@media screen and (max-width: 1000px) {
     .event {
-        color: white;
-        background-color: black;
-        padding: 3rem 2rem;
-        width: 15rem;
+        padding: 5rem 1.5rem;
+        width: 25vw;
         border-right: 1px solid lime;
         font-size: .7rem;
     
@@ -151,7 +169,7 @@ h1, h2 {
 
     /* hide nav */
     .nav {
-        transform: translateY(250px);
+        transform: translateY(270px);
         transition: .3s ease-in;
     }
     /* Show nav when active */
