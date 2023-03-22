@@ -59,7 +59,7 @@ h1, h2 {
   
 .nav-button {
     border: none;
-    background-color: rgb(29, 29, 37);
+    background-color: rgb(99, 99, 99);
     color: white;
     font-size: 2rem;
     padding: 2rem;
@@ -80,7 +80,7 @@ h1, h2 {
 /* hide nav */
 
 .nav {
-    transform: translateY(220px);
+    transform: translateY(230px);
     transition: .3s ease-in;
 }
 /* Show nav when active */
@@ -109,7 +109,7 @@ h1, h2 {
 .event {
     color: white;
     background-color: #1c1c1c;
-    padding: 2rem;
+    padding: 3rem 2rem 2rem 2rem;
     width: 15rem;
     border-left: 1px solid lime;
     border-right: 1px solid lime;
@@ -131,7 +131,7 @@ h1, h2 {
     .event {
         color: white;
         background-color: black;
-        padding: 2rem;
+        padding: 3rem 2rem;
         width: 15rem;
         border-right: 1px solid lime;
         font-size: .7rem;
@@ -147,5 +147,21 @@ h1, h2 {
           0% 100%,   /* bottom left */
           0 100%      /* bottom left */
         );
+    }
+
+    /* hide nav */
+    .nav {
+        transform: translateY(250px);
+        transition: .3s ease-in;
+    }
+    /* Show nav when active */
+    .nav.active {
+        transform: translateY(0px);
+    }
+
+    /* Show nav when active or hovered */
+    .nav.active,
+    .nav:hover {
+        transform: translateY(0px);
     }
 }
