@@ -182,4 +182,10 @@ h1, h2 {
     .nav:hover {
         transform: translateY(0px);
     }
+
+    .nav-button {
+        font-size: 2rem;
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
 }
