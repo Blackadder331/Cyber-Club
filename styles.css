@@ -1,8 +1,13 @@
+@font-face {
+    font-family: "Supply";
+    src: url(./fonts/Supply-Regular.ttf);
+}
+
 *{
     margin:0px; 
     padding:0px; 
     box-sizing:border-box;
-    font-family: sans-serif;
+    font-family: Helvetica, sans-serif;
 }
 
 html {
@@ -12,6 +17,12 @@ html {
 h1, h2 {
     line-height: 1.05;
     margin-bottom: .5rem;
+    font-family: "Supply", monospace;
+    text-transform: uppercase;
+}
+
+h2{
+    font-size: 1.25rem;
 }
 
 .carousel {
@@ -76,7 +87,7 @@ h1, h2 {
 }
   
 .nav-button.active {
-    color: lime;
+    color: #8CFF22;
 }
 
 
@@ -98,7 +109,7 @@ h1, h2 {
 }
 
 #toggle-nav {
-    background-color: lime;
+    background-color: #8CFF22;
     border: none;
     outline: none;
     padding: .5rem 1rem;
@@ -114,8 +125,8 @@ h1, h2 {
     background-color: #1c1c1c;
     padding: 3rem 2rem 2rem 2rem;
     width: 15rem;
-    border-left: 1px solid lime;
-    border-right: 1px solid lime;
+    border-left: 1px solid #8CFF22;
+    border-right: 1px solid #8CFF22;
 
     clip-path: 
     polygon(
@@ -144,14 +155,14 @@ h1, h2 {
 }
 
 [data-target="#slide-4"] {
-    background-image: url(./images/Poster3-orange.png);
+    background-image: url(./images/Poster4-red.png);
 }
 
 @media screen and (max-width: 1000px) {
     .event {
         padding: 3rem 1.5rem 5rem 1.5rem;
         width: 25vw;
-        border-right: 1px solid lime;
+        border-right: 1px solid #8CFF22;
         font-size: .75rem;
     
         clip-path: 
@@ -169,7 +180,7 @@ h1, h2 {
 
     /* hide nav */
     .nav {
-        transform: translateY(260px);
+        transform: translateY(225px);
         transition: .3s ease-in;
     }
     /* Show nav when active */
@@ -187,5 +198,8 @@ h1, h2 {
         font-size: 2rem;
         padding: 1rem;
         margin-bottom: 1rem;
+    }
+    h2{
+        font-size: 1rem;
     }
 }
