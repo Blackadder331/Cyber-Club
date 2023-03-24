@@ -140,7 +140,7 @@ h1, h2 {
 }
 
 [data-target="#slide-3"] {
-    background-image: url(./images/Poster1-low.png);
+    background-image: url(./images/Poster3-red.png);
 }
 
 [data-target="#slide-4"] {
@@ -149,10 +149,10 @@ h1, h2 {
 
 @media screen and (max-width: 1000px) {
     .event {
-        padding: 5rem 1.5rem;
+        padding: 3rem 1.5rem 5rem 1.5rem;
         width: 25vw;
         border-right: 1px solid lime;
-        font-size: .7rem;
+        font-size: .75rem;
     
         clip-path: 
         polygon(
@@ -169,7 +169,7 @@ h1, h2 {
 
     /* hide nav */
     .nav {
-        transform: translateY(270px);
+        transform: translateY(260px);
         transition: .3s ease-in;
     }
     /* Show nav when active */
